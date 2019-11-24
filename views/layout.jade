@@ -1,7 +1,37 @@
 doctype html
 html
   head
-    title= title
+    title wesh alors
+    title= title /*this is a variable*/
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
     block content
+    p formulaire de recherche de films
+    form
+        p entrez le nom d'un film à rechercher
+        input(type='text').class-name#anyId
+        a(href='http://localhost:3001/movies/GET')
+          button valider
+
+
+    p formulaire d'ajout de films
+      form
+        p entrez le nom d'un film à ajouter
+        input(type='text').class-name#anyId
+        a(href='http://localhost:3001/movies/PUT')
+          button valider
+
+
+    p formulaire de modification de films
+      form
+        p entrez le nom d'un film à ajouter
+        input(type='text').class-name#anyId
+        a(href='http://localhost:3001/movies/POST')
+          button valider
+
+    p formulaire de suppression de films
+      form
+        p entrez l'id d'un film à supprimer
+        input(type='text').class-name#anyId
+        a(href='http://localhost:3001/movies/DELETE')
+          button valider
